@@ -3,8 +3,8 @@ function App() {
     <>
       
       <header>
-        <a href="#main-content" className="skip-link">Ana icerige atla</a> [cite: 330]
-        <nav aria-label="Ana navigasyon"> [cite: 316]
+        <a href="#main-content" className="skip-link">Ana icerige atla</a> 
+        <nav aria-label="Ana navigasyon"> 
           <ul>
             <li><a href="#hakkimda">Hakkimda</a></li>
             <li><a href="#projeler">Projeler</a></li>
@@ -18,15 +18,15 @@ function App() {
         
         
         <section id="hakkimda">
-          <h1>Nefise Beyza Yeniekinci</h1> [cite: 203]
-          <h2>Hakkimda</h2> [cite: 207]
-          <figure> [cite: 255]
+          <h1>Nefise Beyza Yeniekinci</h1> 
+          <h2>Hakkimda</h2> 
+          <figure> 
             <img 
               src="profil-fotografin.jpg" 
               alt="Nefise Beyza Yeniekinci'nin profil fotografi" 
               width="200" 
-            /> [cite: 253]
-            <figcaption>Yazilim Muhendisligi Ogrencisi</figcaption> [cite: 259]
+            /> 
+            <figcaption>Yazilim Muhendisligi Ogrencisi</figcaption> 
           </figure>
           <p>Merhaba! Ben Nefise Beyza. Modern web teknolojileriyle ilgileniyorum.</p>
           <h3>Kullandigim Teknolojiler</h3>
@@ -39,14 +39,14 @@ function App() {
 
         
         <section id="projeler">
-          <h2>Projelerim</h2> [cite: 127]
-          <article> [cite: 532]
-            <h3>E-kin (PlantDoc)</h3> [cite: 533]
+          <h2>Projelerim</h2> 
+          <article> 
+            <h3>E-kin (PlantDoc)</h3> 
             <p>Bitki analizi yapan bir veri tabanı yönetim projesi.</p>
             <p><strong>Teknolojiler:</strong> SQL, Image Processing</p>
           </article>
-          <article> [cite: 532]
-            <h3>BookVerse</h3> [cite: 533]
+          <article> 
+            <h3>BookVerse</h3> 
             <p>Mikroservis mimarisi ile geliştirilmiş kitap yönetim sistemi.</p>
             <p><strong>Teknolojiler:</strong> Spring Boot, Java</p>
           </article>
@@ -54,13 +54,13 @@ function App() {
 
         
         <section id="iletisim">
-          <h2>Iletisim</h2> [cite: 135]
-          <form action="#" method="POST" noValidate> [cite: 426]
-            <fieldset> [cite: 427]
-              <legend>Iletisim Formu</legend> [cite: 428]
+          <h2>Iletisim</h2> 
+          <form action="#" method="POST" noValidate> 
+            <fieldset> 
+              <legend>Iletisim Formu</legend> 
 
               <div className="form-group">
-                <label htmlFor="name">Ad Soyad: </label> [cite: 430]
+                <label htmlFor="name">Ad Soyad: </label> 
                 <input 
                   type="text" 
                   id="name" 
@@ -68,24 +68,24 @@ function App() {
                   required 
                   minLength={2} 
                   aria-describedby="name-error" 
-                /> [cite: 431, 432, 434]
-                <small id="name-error" className="error-msg" role="alert"></small> [cite: 433]
+                /> 
+                <small id="name-error" className="error-msg" role="alert"></small> 
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">E-posta: </label> [cite: 444]
+                <label htmlFor="email">E-posta: </label> 
                 <input 
                   type="email" 
                   id="email" 
                   name="email" 
                   required 
                   aria-describedby="email-error" 
-                /> [cite: 445, 446, 448]
-                <small id="email-error" className="error-msg" role="alert"></small> [cite: 451, 453]
+                /> 
+                <small id="email-error" className="error-msg" role="alert"></small> 
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Mesajiniz:</label> [cite: 486]
+                <label htmlFor="message">Mesajiniz:</label> 
                 <textarea 
                   id="message" 
                   name="message" 
@@ -93,20 +93,20 @@ function App() {
                   required 
                   minLength={10} 
                   aria-describedby="message-error"
-                ></textarea> [cite: 487, 488]
-                <small id="message-error" className="error-msg" role="alert"></small> [cite: 489, 491]
+                ></textarea> 
+                <small id="message-error" className="error-msg" role="alert"></small> 
               </div>
 
-              <button type="submit">Gonder</button> [cite: 494]
+              <button type="submit">Gonder</button> 
             </fieldset>
           </form>
         </section>
 
       </main>
 
-      {/* 3. Footer: Telif hakkı [cite: 539, 540] */}
+      
       <footer>
-        <p>&copy; 2026 Nefise Beyza Yeniekinci. Tum haklari saklidir.</p> [cite: 149]
+        <p>&copy; 2026 Nefise Beyza Yeniekinci. Tum haklari saklidir.</p> 
       </footer>
     </>
   )
