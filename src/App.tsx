@@ -4,7 +4,7 @@ function App() {
       <h1>Web Tasarimi ve Programlama</h1>
       <h2>LAB-1</h2>
       <p>Ad Soyad: Nefise Beyza Yeniekinci</p>
-      <p>Ogrenci No: [Numaran]</p>
+      <p>Ogrenci No: [230541059]</p>
     </div>
   )
 }
