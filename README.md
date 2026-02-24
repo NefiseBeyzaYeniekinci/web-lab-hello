@@ -21,3 +21,7 @@ Projeyi yerel bilgisayarınızda çalıştırmak için şu komutları sırayla u
 
 2. Uygulamayı başlatın:
    `npm run dev`s
+
+Bu proje, Chrome DevTools Lighthouse aracı ile test edilmiş ve erişilebilirlik standartlarına uygunluğu doğrulanmıştır.
+
+![Lighthouse Erişilebilirlik Puanı](./lighthouse-report.png)
