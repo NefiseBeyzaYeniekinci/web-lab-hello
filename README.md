@@ -20,4 +20,4 @@ Projeyi yerel bilgisayarınızda çalıştırmak için şu komutları sırayla u
    `npm install`
 
 2. Uygulamayı başlatın:
-   `npm run dev`
+   `npm run dev`s
