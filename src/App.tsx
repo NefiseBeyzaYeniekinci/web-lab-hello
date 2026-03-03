@@ -5,13 +5,13 @@ function App() {
   return (
     <>
       <header>
-        <a href="#main-content" className="skip-link">Ana icerige atla</a> 
+        <a href="#main-content" className="skip-link">Ana içeriğe atla</a> 
         <nav aria-label="Ana navigasyon"> 
           {/* Navigasyon artık Flexbox kurallarını uygulayacak */}
           <ul>
-            <li><a href="#hakkimda">Hakkimda</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
             <li><a href="#projeler">Projeler</a></li>
-            <li><a href="#iletisim">Iletisim</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
           </ul>
         </nav>
       </header>
@@ -26,12 +26,12 @@ function App() {
                 src="profil-fotografin.jpg" 
                 alt="Nefise Beyza Yeniekinci'nin profil fotografi" 
               /> 
-              <figcaption>Yazilim Muhendisligi Ogrencisi</figcaption> 
+              <figcaption>Yazılım Mühendisliği Ögrencisi</figcaption> 
             </figure>
             <div>
-              <h2>Hakkimda</h2>
+              <h2>Hakkımda</h2>
               <p>Merhaba! Ben Nefise Beyza. Modern web teknolojileriyle ilgileniyorum.</p>
-              <h3>Kullandigim Teknolojiler</h3>
+              <h3>Kullandığım Teknolojiler</h3>
               <ul className="tech-list">
                 <li>React & TypeScript</li>
                 <li>Git & GitHub</li>
@@ -57,10 +57,10 @@ function App() {
         </section>
 
         <section id="iletisim">
-          <h2>Iletisim</h2> 
+          <h2>İletişim</h2> 
           <form action="#" method="POST" noValidate> 
             <fieldset> 
-              <legend>Iletisim Formu</legend> 
+              <legend>İletişim Formu</legend> 
               <div className="form-group">
                 <label htmlFor="name">Ad Soyad: </label> 
                 <input type="text" id="name" name="name" required minLength={2} /> 
@@ -70,17 +70,17 @@ function App() {
                 <input type="email" id="email" name="email" required /> 
               </div>
               <div className="form-group">
-                <label htmlFor="message">Mesajiniz:</label> 
+                <label htmlFor="message">Mesajınız:</label> 
                 <textarea id="message" name="message" rows={5} required minLength={10}></textarea> 
               </div>
-              <button type="submit">Gonder</button> 
+              <button type="submit">Gönder</button> 
             </fieldset>
           </form>
         </section>
       </main>
 
       <footer>
-        <p>&copy; 2026 Nefise Beyza Yeniekinci. Tum haklari saklidir.</p> 
+        <p>&copy; 2026 Nefise Beyza Yeniekinci. Tüm hakları saklıdır.</p> 
       </footer>
     </>
   )
