@@ -46,11 +46,6 @@ function App() {
             <p>Bitki analizi yapan bir veri tabanı yönetim projesi.</p>
             <p><strong>Teknolojiler:</strong> SQL, Image Processing</p>
           </article>
-          <article> 
-            <h3>BookVerse</h3> 
-            <p>Mikroservis mimarisi ile geliştirilmiş kitap yönetim sistemi.</p>
-            <p><strong>Teknolojiler:</strong> Spring Boot, Java</p>
-          </article>
         </section>
 
         
