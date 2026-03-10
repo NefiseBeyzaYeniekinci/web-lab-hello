@@ -43,7 +43,7 @@ export default function App() {
           <header className="sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 transition-colors">
             <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
               <h1 className="text-xl font-bold text-blue-800 dark:text-blue-300">
-                Ahmet Yilmaz
+                Nefise Beyza Yeniekinci
               </h1>
               <nav aria-label="Ana navigasyon">
                 <ul className="flex flex-wrap gap-2">
@@ -59,7 +59,7 @@ export default function App() {
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
               <figure className="shrink-0">
                 <div className="w-40 h-40 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg flex items-center justify-center text-blue-800 dark:text-blue-300 text-4xl font-bold overflow-hidden object-cover">
-                  AY
+                  NB
                 </div>
               </figure>
               <div>
@@ -124,7 +124,7 @@ export default function App() {
           </section>
 
           <footer className="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 text-center py-6 px-4 text-gray-500 dark:text-gray-400 text-sm transition-colors">
-            <p>&copy; 2025 Ahmet Yilmaz. Tum haklari saklidir.</p>
+            <p>&copy; 2025 Nefise Beyza Yeniekinci. Tum haklari saklidir.</p>
           </footer>
         </main>
       )}
