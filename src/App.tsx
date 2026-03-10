@@ -1,89 +1,133 @@
-import './App.css'; // App.css'i de import ettiğinden emin ol
-import './styles/tokens.css'; 
+import React, { useState, useEffect } from 'react';
+import Card from './components/Card';
+import Input from './components/Input';
+import Button from './components/Button';
+import UIKit from './pages/UIKit';
 
-function App() {
+export default function App() {
+  const [isDark, setIsDark] = useState(false);
+  const [showUIKit, setShowUIKit] = useState(false);
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
+
   return (
-    <>
-      <header>
-        <a href="#main-content" className="skip-link">Ana içeriğe atla</a> 
-        <nav aria-label="Ana navigasyon"> 
-          {/* Navigasyon artık Flexbox kurallarını uygulayacak */}
-          <ul>
-            <li><a href="#hakkimda">Hakkımda</a></li>
-            <li><a href="#projeler">Projeler</a></li>
-            <li><a href="#iletisim">İletişim</a></li>
-          </ul>
-        </nav>
-      </header>
+    <div className="min-h-screen bg-white dark:bg-gray-50 transition-colors duration-200">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-blue-800 text-white p-2 z-50">
+        Ana icerige atla
+      </a>
 
-      <main id="main-content">
-        {/* Hakkımda Bölümü: about-content sınıfını ekledik */}
-        <section id="hakkimda">
-          <h1>Nefise Beyza Yeniekinci</h1> 
-          <div className="about-content">
-            <figure> 
-              <img 
-                src="profil-fotografin.jpg" 
-                alt="Nefise Beyza Yeniekinci'nin profil fotografi" 
-              /> 
-              <figcaption>Yazılım Mühendisliği Ögrencisi</figcaption> 
-            </figure>
-            <div>
-              <h2>Hakkımda</h2>
-              <p>Merhaba! Ben Nefise Beyza. Modern web teknolojileriyle ilgileniyorum.</p>
-              <h3>Kullandığım Teknolojiler</h3>
-              <ul className="tech-list">
-                <li>React & TypeScript</li>
-                <li>Git & GitHub</li>
-                <li>HTML5 & CSS3</li>
-              </ul>
+      <button
+        onClick={() => setIsDark(!isDark)}
+        className="fixed top-4 right-4 z-50 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-2 rounded-full shadow-lg hover:scale-110 transition-transform"
+        aria-label="Tema degistir"
+      >
+        {!isDark ? <span>&#9790;</span> : <span>&#9728;</span>}
+      </button>
+
+      <div className="fixed top-16 right-4 z-50">
+        <Button size="sm" variant={showUIKit ? "secondary" : "primary"} onClick={() => setShowUIKit(!showUIKit)}>
+          {showUIKit ? "Portföye Dön" : "UI Kit Göster"}
+        </Button>
+      </div>
+
+      {showUIKit ? (
+        <UIKit />
+      ) : (
+        <main id="main-content">
+          <header className="sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 transition-colors">
+            <div className="max-w-6xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
+              <h1 className="text-xl font-bold text-blue-800 dark:text-blue-300">
+                Ahmet Yilmaz
+              </h1>
+              <nav aria-label="Ana navigasyon">
+                <ul className="flex flex-wrap gap-2">
+                  <li><a href="#hakkimda" className="px-3 py-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-800 transition-colors">Hakkimda</a></li>
+                  <li><a href="#projeler" className="px-3 py-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-800 transition-colors">Projeler</a></li>
+                  <li><a href="#iletisim" className="px-3 py-1 rounded-md text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-gray-800 transition-colors">Iletisim</a></li>
+                </ul>
+              </nav>
             </div>
-          </div>
-        </section>
+          </header>
 
-        {/* Projeler Bölümü: project-grid ve project-card sınıflarını ekledik */}
-        <section id="projeler">
-          <h2>Projelerim</h2> 
-          <div className="project-grid">
-            <article className="project-card"> 
-              <h3>E-kin (PlantDoc)</h3> 
-              <div className="project-info">
-                <p>Bitki analizi yapan bir veri tabanı yönetim projesi.</p>
-                <p><strong>Teknolojiler:</strong> SQL, Image Processing</p>
+          <section id="hakkimda" className="py-16 px-4 bg-white dark:bg-gray-950 transition-colors">
+            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
+              <figure className="shrink-0">
+                <div className="w-40 h-40 rounded-full bg-blue-100 dark:bg-blue-900 shadow-lg flex items-center justify-center text-blue-800 dark:text-blue-300 text-4xl font-bold overflow-hidden object-cover">
+                  AY
+                </div>
+              </figure>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center md:text-left">
+                  Hakkimda
+                </h2>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                  Frontend gelistirici olarak modern web teknolojileriyle kullanici dostu arayuzler olusturuyorum.
+                </p>
+                <ul className="flex flex-wrap gap-2">
+                  <li className="bg-blue-800 text-white px-3 py-1 rounded-full text-sm">React</li>
+                  <li className="bg-blue-800 text-white px-3 py-1 rounded-full text-sm">TypeScript</li>
+                  <li className="bg-blue-800 text-white px-3 py-1 rounded-full text-sm">Tailwind</li>
+                </ul>
               </div>
-            </article>
-            {/* Buraya yeni projeler eklendiğinde otomatik yan yana dizilecek */}
-          </div>
-        </section>
+            </div>
+          </section>
 
-        <section id="iletisim">
-          <h2>İletişim</h2> 
-          <form action="#" method="POST" noValidate> 
-            <fieldset> 
-              <legend>İletişim Formu</legend> 
-              <div className="form-group">
-                <label htmlFor="name">Ad Soyad: </label> 
-                <input type="text" id="name" name="name" required minLength={2} /> 
+          <section id="projeler" className="py-16 px-4 bg-gray-50 dark:bg-gray-900 transition-colors">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-10">
+                Projelerim
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card variant="elevated" title="E-Ticaret" image="https://via.placeholder.com/400x200?text=Proje+1" imageAlt="E-Ticaret anasayfa gorunumu">
+                  React ve Node.js ile tam kapsamli uygulama.
+                </Card>
+                <Card variant="outlined" title="Blog Portali" image="https://via.placeholder.com/400x200?text=Proje+2" imageAlt="Blog anasayfa gorunumu">
+                  Next.js ve Tailwind CSS ile uretilmis SEO dostu blog.
+                </Card>
+                <Card variant="filled" title="Görev Yöneticisi" image="https://via.placeholder.com/400x200?text=Proje+3" imageAlt="Uygulama gorunumu" footer={<Button size="sm">İncele</Button>}>
+                  TypeScript ve React kullanılarak gelistirilen gorev takip araci.
+                </Card>
               </div>
-              <div className="form-group">
-                <label htmlFor="email">E-posta: </label> 
-                <input type="email" id="email" name="email" required /> 
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Mesajınız:</label> 
-                <textarea id="message" name="message" rows={5} required minLength={10}></textarea> 
-              </div>
-              <button type="submit">Gönder</button> 
-            </fieldset>
-          </form>
-        </section>
-      </main>
+            </div>
+          </section>
 
-      <footer>
-        <p>&copy; 2026 Nefise Beyza Yeniekinci. Tüm hakları saklıdır.</p> 
-      </footer>
-    </>
-  )
+          <section id="iletisim" className="py-16 px-4 bg-white dark:bg-gray-950 transition-colors">
+            <div className="max-w-lg mx-auto">
+              <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
+                Iletisim
+              </h2>
+              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                <Input id="name" label="Ad Soyad" required />
+                <Input id="email" label="E-posta" type="email" required />
+                <div className="space-y-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+                    Mesajiniz
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={5}
+                    required
+                    className="w-full px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none dark:bg-gray-800 dark:text-gray-100 dark:border-gray-600 transition-colors"
+                  ></textarea>
+                </div>
+                <Button variant="primary" size="lg" type="submit">
+                  Gonder
+                </Button>
+              </form>
+            </div>
+          </section>
+
+          <footer className="bg-gray-100 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 text-center py-6 px-4 text-gray-500 dark:text-gray-400 text-sm transition-colors">
+            <p>&copy; 2025 Ahmet Yilmaz. Tum haklari saklidir.</p>
+          </footer>
+        </main>
+      )}
+    </div>
+  );
 }
-
-export default App;
