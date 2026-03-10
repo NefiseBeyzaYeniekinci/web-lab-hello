@@ -67,7 +67,9 @@ export default function App() {
                   Hakkimda
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                  Frontend gelistirici olarak modern web teknolojileriyle kullanici dostu arayuzler olusturuyorum.
+                  Ben Nefise Beyza, Yazılım Mühendisliği Öğrencisiyim. Yapay zeka, mobil ve web alanlarına ilgi duyuyorum. Modern teknolojilerle kullanıcı dostu projeler oluşturmayı hedefliyorum.
+                  <br />
+                  Öğrenci No: 230541059
                 </p>
                 <ul className="flex flex-wrap gap-2">
                   <li className="bg-blue-800 text-white px-3 py-1 rounded-full text-sm">React</li>
@@ -84,11 +86,11 @@ export default function App() {
                 Projelerim
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card variant="elevated" title="E-Ticaret" image="https://via.placeholder.com/400x200?text=Proje+1" imageAlt="E-Ticaret anasayfa gorunumu">
-                  React ve Node.js ile tam kapsamli uygulama.
+                <Card variant="elevated" title="e-kin" image="https://via.placeholder.com/400x200?text=Proje+1" imageAlt="e-kin uygulamasinin kapak fotografi">
+                  Kapsamli proje ve e-ticaret uygulamasi.
                 </Card>
-                <Card variant="outlined" title="Blog Portali" image="https://via.placeholder.com/400x200?text=Proje+2" imageAlt="Blog anasayfa gorunumu">
-                  Next.js ve Tailwind CSS ile uretilmis SEO dostu blog.
+                <Card variant="outlined" title="Movision" image="https://via.placeholder.com/400x200?text=Proje+2" imageAlt="Movision film uygulamasinin kapak fotografi">
+                  Film ve dizi takip portali.
                 </Card>
                 <Card variant="filled" title="Görev Yöneticisi" image="https://via.placeholder.com/400x200?text=Proje+3" imageAlt="Uygulama gorunumu" footer={<Button size="sm">İncele</Button>}>
                   TypeScript ve React kullanılarak gelistirilen gorev takip araci.
