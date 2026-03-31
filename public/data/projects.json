@@ -1,6 +1,36 @@
 [
     {
         "id": 1,
+        "title": "e-kin",
+        "description": "Yapay zeka destekli mobil bitki analiz sistemi. Kamera ile çekilen bitkiyi anında tanıyıp hastalık tespiti, bakım önerileri ve bitki veritabanı sunar.",
+        "tech": [
+            "React Native",
+            "Python",
+            "TensorFlow",
+            "FastAPI"
+        ],
+        "year": 2025,
+        "category": "fullstack",
+        "featured": true,
+        "image": "https://via.placeholder.com/400x200?text=e-kin+Bitki+AI"
+    },
+    {
+        "id": 2,
+        "title": "Movision",
+        "description": "Dinamik verilerle çalışan kişiselleştirilmiş film ve dizi öneri platformu. TMDB API entegrasyonu, kullanıcı tercihleri ve izleme geçmişine dayalı akıllı öneriler sunar.",
+        "tech": [
+            "Next.js",
+            "TypeScript",
+            "TMDB API",
+            "Tailwind"
+        ],
+        "year": 2025,
+        "category": "frontend",
+        "featured": true,
+        "image": "https://via.placeholder.com/400x200?text=Movision"
+    },
+    {
+        "id": 3,
         "title": "E-Ticaret Platformu",
         "description": "React ve Node.js ile tam kapsamli e-ticaret uygulamasi.",
         "tech": [
@@ -14,7 +44,7 @@
         "image": "https://via.placeholder.com/400x200?text=E-Ticaret"
     },
     {
-        "id": 2,
+        "id": 4,
         "title": "Blog Uygulamasi",
         "description": "Next.js ile SEO dostu kisisel blog platformu.",
         "tech": [
@@ -28,7 +58,7 @@
         "image": "https://via.placeholder.com/400x200?text=Blog"
     },
     {
-        "id": 3,
+        "id": 5,
         "title": "Hava Durumu API",
         "description": "OpenWeather API ile anlik hava durumu sorgulama.",
         "tech": [
@@ -42,7 +72,7 @@
         "image": "https://via.placeholder.com/400x200?text=Hava+Durumu"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Gorev Yoneticisi",
         "description": "Drag-and-drop destekli Kanban tarzi gorev panosu.",
         "tech": [
@@ -56,7 +86,7 @@
         "image": "https://via.placeholder.com/400x200?text=Gorev+Yoneticisi"
     },
     {
-        "id": 5,
+        "id": 7,
         "title": "Chat Uygulamasi",
         "description": "WebSocket ile gercek zamanli mesajlasma.",
         "tech": [
