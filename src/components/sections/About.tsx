@@ -7,12 +7,13 @@ export default function About() {
         </h2>
         <div className="text-gray-600 dark:text-gray-300 space-y-4 text-lg">
           <p>
-            Merhaba! Ben web teknolojileri ve kullanici arayuzu gelistirme konusunda tutkulu bir <strong>Frontend Developer</strong>'im.
-            Amacim modern, hizli ve erisilebilir web uygulamalari olusturmaktir.
+            Merhaba, ben Nefise Beyza Yeniekinci.
           </p>
           <p>
-            React, TypeScript ve Tailwind CSS gibi modern araclarla calismayi seviyorum. 
-            Surekli yeni teknolojiler ogrenmek ve kendimi gelistirmek en buyuk motivasyonum.
+            Hem Frontend hem de Mobil Geliştirme dünyasında kullanıcı odaklı çözümler üreten bir yazılım geliştiriciyim. Modern web teknolojileri ve mobil platformlar arasında köprü kurarak, performanslı ve estetik dijital ürünler inşa etmeyi seviyorum.
+          </p>
+          <p>
+            Yazılım süreçlerinde veri analizi ve otomasyon (RPA) gibi alanlarda edindiğim bakış açısını, temiz kod ve güçlü kullanıcı deneyimiyle birleştiriyorum. Karmaşık problemleri basit, işlevsel ve ölçeklenebilir uygulamalara dönüştürmek en büyük motivasyonum.
           </p>
         </div>
       </div>

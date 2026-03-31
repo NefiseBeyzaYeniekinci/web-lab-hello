@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "#hero", label: "Ana Sayfa" },
-  { href: "#about", label: "Hakkimda" },
+  { href: "#about", label: "Hakkımda" },
   { href: "#projects", label: "Projeler" },
-  { href: "#contact", label: "Iletisim" },
+  { href: "#contact", label: "İletişim" },
 ];
 
 export default function Header() {
