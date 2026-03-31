@@ -4,7 +4,7 @@ export default function Hero() {
        className="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 px-4">
       <div className="text-center max-w-2xl">
         <p className="text-blue-600 dark:text-blue-400 font-medium mb-2">
-          Merhaba, ben
+          Merhaba, Ben
         </p>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
           Nefise Beyza Yeniekinci
