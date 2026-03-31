@@ -3,7 +3,6 @@ import type { Project, Category, SortField, SortOrder } from "../../types/projec
 import { fetchProjects } from "../../services/projectService";
 import { applyFilters } from "../../utils/projectHelpers";
 import ProjectFilter from "../forms/ProjectFilter";
-import Card from "../Card";
 
 export default function ProjectList() {
   // State
@@ -97,10 +96,14 @@ export default function ProjectList() {
                      className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow">
 
               {/* Gorsel */}
-              <div className="h-48 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center">
-                <span className="text-4xl opacity-50">
-                  &#128187;
-                </span>
+              <div className="h-48 w-full overflow-hidden bg-gray-100 dark:bg-gray-700">
+                {project.image ? (
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" loading="lazy" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-700 dark:to-gray-600">
+                    <span className="text-4xl opacity-50">&#128187;</span>
+                  </div>
+                )}
               </div>
 
               {/* Icerik */}

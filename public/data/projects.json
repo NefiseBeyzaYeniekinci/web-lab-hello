@@ -12,7 +12,7 @@
         "year": 2025,
         "category": "fullstack",
         "featured": true,
-        "image": "https://via.placeholder.com/400x200?text=e-kin+Bitki+AI"
+        "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&q=80"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
         "year": 2025,
         "category": "frontend",
         "featured": true,
-        "image": "https://via.placeholder.com/400x200?text=Movision"
+        "image": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80"
     },
     {
         "id": 3,
@@ -41,7 +41,7 @@
         "year": 2024,
         "category": "fullstack",
         "featured": true,
-        "image": "https://via.placeholder.com/400x200?text=E-Ticaret"
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
     },
     {
         "id": 4,
@@ -55,7 +55,7 @@
         "year": 2024,
         "category": "frontend",
         "featured": false,
-        "image": "https://via.placeholder.com/400x200?text=Blog"
+        "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80"
     },
     {
         "id": 5,
@@ -69,7 +69,7 @@
         "year": 2023,
         "category": "frontend",
         "featured": true,
-        "image": "https://via.placeholder.com/400x200?text=Hava+Durumu"
+        "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80"
     },
     {
         "id": 6,
@@ -83,7 +83,7 @@
         "year": 2024,
         "category": "frontend",
         "featured": false,
-        "image": "https://via.placeholder.com/400x200?text=Gorev+Yoneticisi"
+        "image": "https://images.unsplash.com/photo-1507925922894-de9fc59efa28?w=800&q=80"
     },
     {
         "id": 7,
@@ -97,6 +97,6 @@
         "year": 2023,
         "category": "fullstack",
         "featured": true,
-        "image": "https://via.placeholder.com/400x200?text=Chat"
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80"
     }
 ]

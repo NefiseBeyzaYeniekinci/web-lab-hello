@@ -6,10 +6,10 @@ export default function ContactSection() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Iletisime Gec
+            İletişime Geç
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
-            Formu doldurarak benimle iletisime gecebilirsiniz.
+            Formu doldurarak benimle iletişime geçebilirsiniz.
           </p>
         </div>
         <ContactForm />
